@@ -1,0 +1,41 @@
+<br>
+<div class="row">
+  <div class="col-xs-12">
+    <form>
+      <div class="row">
+        <div class="col-sm-3 form-group">
+          <label for="name">NAMA</label>
+          <input type="text" 
+          id="name" 
+          class="form-control" 
+          #nameInput>
+        </div>
+        <div class="col-sm-9 form-group">
+          <label for="komentar">KOMENTAR</label>
+          <input type="text" 
+          id="komentar" 
+          class="form-control" 
+          #komentarInput>
+          
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-12">
+          <button type="button" class="btn btn-primary" (click)="onAddItem()">Kirim</button>&nbsp;
+          <button type="button" class="btn btn-danger">Hapus</button>&nbsp;
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+<hr>
+<p>KOLOM KOMENTAR :</p>
+<ul class="list-group">
+  <a class="list-group-item" style="cursor:pointer"
+    *ngFor="let koment of koments">
+  <p style="color:blue">{{koment.name}}</p>
+  <p style="font-family: lucida fax; font-size: 3mm">+ {{koment.komentar}}</p>
+
+  </a>
+</ul>

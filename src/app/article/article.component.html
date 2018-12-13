@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  
+</head>
+
+<body>
+
+
+  
+  
+  <h2 style="font-family:Comic Sans MS; text-align:center; color:darkgray">ARTICLE</h2>
+  <br>
+    <div class="row">
+      <div class="col-sm-3"  *ngFor="let article of articles">    
+          <a href="#" class="list-group-item clearfix" (click)=onSelected()>
+              <span class="pull-left">
+                  <img 
+                  [src]="article.imagePath"
+                  alt="{{article.name}}" 
+                  class="img-responsive" 
+                  style="max-height:80px; max-width:80px;">
+              </span>
+              <div class="pull-right" >
+                <h4 class="list-gr oup-item-heading">{{article.name}}</h4>
+                <p class="list-group-item-text"> {{article.description}}</p>
+                
+                  
+              </div>
+             
+            </a>
+            <br>
+            <br>
+      </div>
+    </div>
+    
+
+
+    
+  
+
+
+</body>
+</html>
+
+

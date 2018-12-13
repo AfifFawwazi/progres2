@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html>
+<head >
+</head>
+<body>
+    <style>
+        .header {
+           position: top;
+           left: 0;
+           bottom: 0;
+           width: 100%;
+           background-color: rgb(73, 38, 71);
+           text-align: center;
+        }
+      </style>
+    <div id="header" >
+				<nav class="header">
+            <div class="container-fluid" >
+              <div class="navbar-header" >
+                <a class="navbar-brand" style="font-family:jokerman;color:floralwhite; font-size:7mm">HOROSCOPE !</a>
+                
+              </div>
+              <ul class="nav navbar-nav" >
+                <li>
+                  <a routerLink="/home">Home</a>
+                </li>
+                <li>
+                  <!-- <a href="#" (click)="onSelect('horoscope')">Horoscope</a> -->
+                  <a routerLink="/horoscopes">Horoscope</a>
+                </li>
+                <li>
+                  <!-- <a href="#"(click)="onSelect('article')">Article</a> -->
+                  <a routerLink="/article">Article</a>
+                </li>
+                <li>
+                  <!-- <a href="#" (click)="onSelect('About')">About</a> -->
+                  <a routerLink="/about">About</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+      </div>
+    
+    
+
+</body>
+</html>

@@ -1,0 +1,36 @@
+<p>_________________________________________________________________________________________________________________________</p>
+<br>
+<div class="row" style="margin-left:10px">
+    <div class="col-sm-4">
+      <h1>#{{horoscope.name}}</h1>
+      <p>({{horoscope.description}})</p>
+      <img [src]="horoscope.imagePath" 
+      alt="{{horoscope.name}}" 
+      class="img-responsive"
+      style="height: 270px; width: 250px;">
+    </div>
+        
+    <div class="col-sm-8">
+        <br>
+        <br>
+        <br>
+        
+        
+        
+          <h3>{{horoscope.detail}}</h3>
+          <br>
+          <p>Rezeki   : {{horoscope.rezeki}}</p>
+          <p>Asmara   : {{horoscope.asmara}}</p>
+          <p>Fisik    : {{horoscope.fisik}}</p>
+          <hr>
+          <app-komentar
+    (komentAdded)="onKomentAdded($event)">    
+    </app-komentar>
+        </div>
+
+        
+  </div>
+
+  <br>
+  <br>
+  <br>
